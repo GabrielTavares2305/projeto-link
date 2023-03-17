@@ -1,0 +1,106 @@
+/*Folha de estilo*/
+
+/*
+seletor EX: h1 {
+    propriedade: valor;
+*/
+
+body{
+    margin: 0;
+    background-color:#222831;
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    background-color: #EEEEEE; /* cor de fundo*/
+    width: 90%; /*largura*/
+    max-width: 400px; /*largura maxima*/
+    height: auto; /*altura*/
+    border-radius: 10px; /* borda arredondada*/
+    margin-left: auto; /*para ficar no centro da tela*/
+    margin-right: auto;
+    padding: 30px; /* espaço entre os elementos internos*/
+    box-sizing: border-box; /*faz com que as dimensoes sejam respeitadas mesmo com o padding e borda*/
+    margin-top: 40px;
+    text-align: center; /* centralizar os textos*/
+
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: solid 5px #222831; 
+
+}
+
+img:hover{
+border: solid 5px #666;
+
+}
+
+h1{
+    margin: 0;
+    color:#393E46;
+    font-size: 32px;
+}
+
+h2{
+    margin: 0;
+    color:#222831;
+    font-size: 20px;
+}
+
+p{
+    color: #666;
+    font-size: 16px;
+}
+
+ul{
+    margin: 0 0 30px 0;  /* top - right - bottom - left */
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a{
+    background-color: #393E46;
+    color: #ffff;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none; /*tirar o sublinhado do link*/
+}
+
+/* Formatando os links quando o usuario estiver com o mouse em cima*/
+
+ul a:hover{
+    background-color: #000;
+}
+
+#link{
+color: #222831;
+}
+
+#link:hover{
+    font-style: italic;
+}
+
+/* Condiçao para telas pequenas 'celular' */
+/* Media query */
+
+@media(max-width: 414px){
+    body{
+        background-color: #393E46;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    ul a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
